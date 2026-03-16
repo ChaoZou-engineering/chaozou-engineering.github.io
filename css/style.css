@@ -1,23 +1,17 @@
-body{
-background:#0f172a;
-color:white;
-font-family:Inter;
-}
-
-nav{
-background:#020617;
+.project-card{
+background:white;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
 padding:20px;
+transition:0.3s;
 }
 
-nav a{
-color:#38bdf8;
-margin-right:20px;
-text-decoration:none;
+.project-card:hover{
+transform:translateY(-5px);
 }
 
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:8px;
-margin-top:20px;
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
